@@ -11,6 +11,11 @@ Ejecutar entorno:
 
 - Instalar dependencias:
 pip install fastapi uvicorn
+pip install sqlalchemy
+pip install pymysql
+pip install cryptography
 
 - Ejecutar app:
-python src/app.py
+uvicorn app:app
+uvicorn app:app --reload
+
